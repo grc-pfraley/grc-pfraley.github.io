@@ -1,0 +1,72 @@
+/*CSS document*/
+
+body {
+    background-color: rgb(235, 235, 235);
+}
+
+div.container {
+    max-width: 60em;
+    margin: 0 auto;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    text-transform: uppercase;
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 700;
+    font-style: normal;    
+    font-size: 1.4em;
+    margin-right: 1em;
+}
+
+nav ul li a {
+    color: rgb(10 10 10);
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    width: 11em;
+}
+
+h2 {
+    color: rgb(10 10 10);
+    text-transform: uppercase;
+    font-family: tussilago, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+h3 {
+    color: rgb(10 10 10);
+    text-transform: uppercase;
+    font-family: tussilago, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.2em;
+}
+
+p {
+    color: rgb(10 10 10);
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 400;
+    font-style: italic;    
+    font-size: 1em;
+}
