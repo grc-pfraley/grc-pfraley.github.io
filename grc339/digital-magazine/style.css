@@ -1,12 +1,17 @@
 /*CSS document*/
 
 body {
-    background-color: rgb(235, 235, 235);
+    background-color: rgb(220, 220, 220);
 }
 
 div.container {
-    max-width: 60em;
+    max-width: 80em;
     margin: 0 auto;
+}
+
+section {
+    max-width: 40em;
+    margin: 0 auto 3em;
 }
 
 figure {
@@ -33,7 +38,12 @@ nav ul li {
 }
 
 nav ul li a {
-    color: rgb(10 10 10);
+    color: rgb(10, 10, 10);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: rgb(250, 250, 250);
     text-decoration: none;
 }
 
@@ -42,7 +52,11 @@ a {
 }
 
 h1 {
-    width: 11em;
+    width: 8em;
+}
+
+h1 img {
+    margin: 0 1em;
 }
 
 h2 {
@@ -69,4 +83,75 @@ p {
     font-weight: 400;
     font-style: italic;    
     font-size: 1em;
+}
+
+@media screen and (min-width: 60em){
+
+    div.container {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        grid-gap: 0 1em;
+    }
+
+    header {
+        grid-column: 1/3;
+    }
+
+    main {
+        grid-column: 1/2;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 0 1em;
+    }
+
+    section.mainstory {
+        grid-column: 2/4;
+        grid-row: 1/3;
+        display: flex;
+        flex-direction: column;
+    }
+
+    section.mainstory figure {
+        flex: 1 0 18em;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    section.mainstory figure div {
+        flex: 1 0 18em;
+        background-image: url(roy_classicgirl.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    section.mainstory figure div img {
+        height: 100%;
+        
+    }
+
+    section.mainstory figure figcaption {
+        flex: 0 0 3em;
+    }
+
+    section.mainstory h3 {
+        flex: 0 0 auto;
+        margin: 1 0em;
+    }
+
+    section.mainstory p {
+        flex: 0 0 auto;
+        margin: 1;
+    }
+
+    section.secondary figure {
+        flex: 1 0 18em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    aside {
+        grid-column: 2/3;
+    }
 }
